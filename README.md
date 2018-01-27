@@ -1,13 +1,14 @@
 # TextEdit
-A bot for discord written in python3.6 which can create messages with an embed
+Ein Bot geschrieben in Python 3.6 womit man Embed nachrichten versenden kann
+## Installation
+**Step 1**: Sei sicher du hast Git und die discord.py [rewrite api](https://gist.github.com/BaseChip/e5d4583ad5392cd9638410c25d24547e) installiert
 
-## Install
-**Step 1**: Make sure, you have git amd the [rewrite api](https://gist.github.com/BaseChip/e5d4583ad5392cd9638410c25d24547e) installed
-
-**Step 2:** Clone this repository with git clone "https://github.com/BaseChip/TextEdit"
+**Step 2:** Klone diese Repository "https://github.com/GregTCLTK/TextEdit"
 <br>
-## About this project
-I don't develop this project any more and therefore it is now also open source. If someone would like to develop this project further he should do this gladly and then I would be happy if he would create an pull-request. If I like the update, I'll give that one premium for my other bots and the developer roll on my [discord](https://discord.gg/HD7x2vx).  
+## Über dieses Projekt
+Ich programmiere nicht mehr an diesem Bot weiter deswegen habe ich mich entschlossen den Bot Open-Source zu machen. Wenn irgendjemand gerne an diesem Projekt weiterarbeiten möchte darf er das gerne machen, ich würde mich auch sehr über eine Pull request freuen. Wenn dir das Update gefällt komm auf meinen [Discord](https://discord.gg/HD7x2vx) dort bekommst du dann premium bei allen meinen Bot's.  
 
-# Important
-It is important that you enter your [bottoken](https://discordapp.com/developers) in the file KEYS.py, otherwise the bot will not work.
+# WICHTIG
+Es ist sehr wichtig deinen Bot Token von [Token-Seite](https://discordapp.com/developers) in die Datei KEYS.py zu schreiben wenn du das nicht tust könnte der Bot nicht starten.
+
+
