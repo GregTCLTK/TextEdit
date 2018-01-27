@@ -1,2 +1,2 @@
-TOKEN="Insert your token here"
+TOKEN="Füge hier deinen Token ein"
 PREFIX="-"
