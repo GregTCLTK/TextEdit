@@ -62,9 +62,9 @@ class MyClient(discord.Client):
 				msgwaitfor = await client.wait_for("message", check=checkmsg, timeout=None)
 				if msgwaitfor.content != " ":
 
-					if msgwaitfor.content == "green":
+					if msgwaitfor.content == "grün":
 						print("Farbe: Grün")
-						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.green(), description="You have chosen the color green. As an example of what the message looks like later, this message has already colored the border. So now please send me the text, which your message should have"))
+						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.green(), description="Du hast die Farbe grün ausgewählt. Als Beispiel wie die nachricht später aussehen wird habe ich den Rand dieser Nachricht grün gefärbt. Bitte gebe jetzt den Text ein der in der nachricht stehen soll!"))
 						def checkg(m):
 							if message.content != None and m.author.id == message.author.id and m.channel.id == message.channel.id:
 								return m
@@ -76,11 +76,11 @@ class MyClient(discord.Client):
 							await msgwaitfor.delete()
 							await cg.delete()
 						except discord.error.Forbidden:
-							await message.channel.send(embed=discord.Embed(color=discord.Color.red(), description="Oh it looks like that i have to correct myself. I said i am going to delete all messages, but it seems to be that i do not have the permissions to delete messages (manage messages)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
+							await message.channel.send(embed=discord.Embed(color=discord.Color.red(), description="Oh es sieht so aus als müsste ich mich selbs korrigieren. Ich habe gesagt das ich alle nachrichten des Setup's löschen werde aber wie es aussieht habe ich nicht die Permission's dazu die Permission heisst (Nachrichten verwalten)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
 
-					elif msgwaitfor.content == "red":
+					elif msgwaitfor.content == "rot":
 						print("Color: Red")
-						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="You have chosen the color red. As an example of what the message looks like later, this message has already colored the border. So now please send me the text, which your message should have"))
+						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="Du hast die Farbe rot ausgewählt. Als Beispiel wie die nachricht später aussehen wird habe ich den Rand dieser Nachricht rot gefärbt. Bitte gebe jetzt den Text ein der in der nachricht stehen soll!"))
 						def checkr(m):
 							if message.content != None and m.author.id == message.author.id and m.channel.id == message.channel.id:
 								return m
@@ -92,14 +92,14 @@ class MyClient(discord.Client):
 							await msgwaitfor.delete()
 							await cg.delete()
 						except discord.error.Forbidden:
-							await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="Oh it looks like that i have to correct myself. I said i am going to delete all messages, but it seems to be that i do not have the permissions to delete messages (manage messages)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
+							await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="Oh es sieht so aus als müsste ich mich selbs korrigieren. Ich habe gesagt das ich alle nachrichten des Setup's löschen werde aber wie es aussieht habe ich nicht die Permission's dazu die Permission heisst (Nachrichten verwalten)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
 
 
 
 
-					elif msgwaitfor.content == "blue":
+					elif msgwaitfor.content == "blau":
 						print("Color: Blue")
-						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.blue(),description="You have chosen the color blue. As an example of what the message looks like later, this message has already colored the border. So now please send me the text, which your message should have"))
+						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.blue(),description="Du hast die Farbe blau ausgewählt. Als Beispiel wie die nachricht später aussehen wird habe ich den Rand dieser Nachricht blau gefärbt. Bitte gebe jetzt den Text ein der in der nachricht stehen soll!"))
 						def checkb(m):
 							if message.content != None and m.author.id == message.author.id and m.channel.id == message.channel.id:
 								return m
@@ -111,13 +111,13 @@ class MyClient(discord.Client):
 							await msgwaitfor.delete()
 							await cg.delete()
 						except discord.error.Forbidden:
-							await message.channel.send(embed=discord.Embed(color=discord.Color.red(), description="Oh it looks like that i have to correct myself. I said i am going to delete all messages, but it seems to be that i do not have the permissions to delete messages (manage messages)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
+							await message.channel.send(embed=discord.Embed(color=discord.Color.red(), description="Oh es sieht so aus als müsste ich mich selbs korrigieren. Ich habe gesagt das ich alle nachrichten des Setup's löschen werde aber wie es aussieht habe ich nicht die Permission's dazu die Permission heisst (Nachrichten verwalten)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
 
 
 
 					elif msgwaitfor.content == "magenta":
 						print("Color: Magenta")
-						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.magenta(),description="You have chosen the color magenta. As an example of what the message looks like later, this message has already colored the border. So now please send me the text, which your message should have"))
+						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.magenta(),description="Du hast die Farbe magenta ausgewählt. Als Beispiel wie die nachricht später aussehen wird habe ich den Rand dieser Nachricht magenta gefärbt. Bitte gebe jetzt den Text ein der in der nachricht stehen soll!"))
 
 						def checkm(m):
 							if message.content != None and m.author.id == message.author.id and m.channel.id == message.channel.id:
@@ -131,12 +131,12 @@ class MyClient(discord.Client):
 							await msgwaitfor.delete()
 							await cg.delete()
 						except discord.error.Forbidden:
-							await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="Oh it looks like that i have to correct myself. I said i am going to delete all messages, but it seems to be that i do not have the permissions to delete messages (manage messages)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
+							await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="Oh es sieht so aus als müsste ich mich selbs korrigieren. Ich habe gesagt das ich alle nachrichten des Setup's löschen werde aber wie es aussieht habe ich nicht die Permission's dazu die Permission heisst (Nachrichten verwalten)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
 
 
 					elif msgwaitfor.content == "gold":
 						print("Color: Gold")
-						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.gold(),description="You have chosen the color gold - ok its more yellow, but its called gold. As an example of what the message looks like later, this message has already colored the border. So now please send me the text, which your message should have"))
+						cg = await message.channel.send(embed=discord.Embed(color=discord.Color.gold(),description="Du hast die Farbe gold ausgewählt aber eigentlich sieht es eher wie gelb aus. Als Beispiel wie die nachricht später aussehen wird habe ich den Rand dieser Nachricht gold gefärbt. Bitte gebe jetzt den Text ein der in der nachricht stehen soll!"))
 
 						def checkgold(m):
 							if message.content != None and m.author.id == message.author.id and m.channel.id == message.channel.id:
@@ -151,15 +151,15 @@ class MyClient(discord.Client):
 							await msgwaitfor.delete()
 							await cg.delete()
 						except discord.error.Forbidden:
-							await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="Oh it looks like that i have to correct myself. I said i am going to delete all messages, but it seems to be that i do not have the permissions to delete messages (manage messages)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
+							await message.channel.send(embed=discord.Embed(color=discord.Color.red(),description="Oh es sieht so aus als müsste ich mich selbs korrigieren. Ich habe gesagt das ich alle nachrichten des Setup's löschen werde aber wie es aussieht habe ich nicht die Permission's dazu die Permission heisst (Nachrichten verwalten)").set_thumbnail(url="https://thebotdev.de/assets/img/alert.png"))
 
 					else:
-						idktc = await message.channel.send(content="Sorry but i dont know this color: "+msgwaitfor.content)
+						idktc = await message.channel.send(content="Sorry aber die Farbe: "+msgwaitfor.content+" kenne ich nicht!")
 						await asyncio.sleep(20)
 						await idktc.delete()
 
 
 
-#Log in to Bot
+
 client= MyClient()
-client.run(KEYS.TOKEN) #Your Programm does only run if you enter your Prefix in the file KEYS
+client.run(KEYS.TOKEN)
